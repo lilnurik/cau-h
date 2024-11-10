@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Nunito', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg); 
+  color: var(--text); 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root {
+  /* Default (light) theme */
+  --bg: #ffffff;
+  --header: #282c34;
+  --link: #61dafb;
+  --text: #000000;
+}
+
+[data-theme='dark'] {
+  --bg: #121212;
+  --header: #282c34;
+  --link: #61dafb;
+  --text: #e0e0e0;
+}
+
+[data-theme='light'] {
+  --bg: #ffffff;
+  --header: #282c34;
+  --link: #61dafb;
+  --text: #000000;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
